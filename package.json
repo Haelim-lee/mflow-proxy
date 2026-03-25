@@ -1,0 +1,8 @@
+{
+  "name": "mflow-proxy",
+  "version": "1.0.0",
+  "description": "KIS API proxy for MFlow Flutter Web app",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
