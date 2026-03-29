@@ -11,6 +11,7 @@ module.exports = async (req, res) => {
       'FHKST01010100'
     );
     const o = data.output;
+    if (!o) return res.status(502).json({ error: 'KIS no output', raw: data });
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.json({
       price: parseFloat(o.stck_prpr || '0'),
